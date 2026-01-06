@@ -1,3 +1,6 @@
+# Disable bzlmod to avoid rules_python root user check
+common --noenable_bzlmod
+
 # Enable the legacy WORKSPACE file for Bazel 8+
 common --enable_workspace
 
