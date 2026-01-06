@@ -1,0 +1,9 @@
+[java_test(
+    name = "CoreTest_%d" % i,
+    srcs = ["src/test/java/com/harness/core/CoreTest_%d.java" % i],
+    test_class = "com.harness.core.CoreTest_%d" % i,
+    deps = [
+        "@maven//:junit_junit",
+        "@maven//:com_google_guava_guava",
+    ],
+) for i in range(1, 6)]
