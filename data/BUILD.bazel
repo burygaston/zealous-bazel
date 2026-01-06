@@ -1,0 +1,12 @@
+[java_test(
+    name = "DataTest_%d" % i,
+    srcs = ["src/test/java/com/harness/data/DataTest_%d.java" % i],
+    test_class = "com.harness.data.DataTest_%d" % i,
+    deps = [
+        "@maven//:junit_junit",
+        "@maven//:com_h2database_h2",
+        "@maven//:com_zaxxer_HikariCP",
+        "@maven//:com_fasterxml_jackson_core_jackson_databind",
+        "@maven//:com_fasterxml_jackson_core_jackson_core",
+    ],
+) for i in range(1, 11)]
