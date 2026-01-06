@@ -3,7 +3,6 @@
     srcs = ["src/test/java/com/harness/api/ApiTest_%d.java" % i],
     test_class = "com.harness.api.ApiTest_%d" % i,
     deps = [
-        "//service:ServiceTest_1",
         "@maven//:junit_junit",
         "@maven//:com_squareup_okhttp3_okhttp",
     ],

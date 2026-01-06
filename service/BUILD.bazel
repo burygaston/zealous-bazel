@@ -3,7 +3,6 @@
     srcs = ["src/test/java/com/harness/service/ServiceTest_%d.java" % i],
     test_class = "com.harness.service.ServiceTest_%d" % i,
     deps = [
-        "//core:CoreTest_1", # Simulated internal dependency
         "@maven//:junit_junit",
         "@maven//:org_apache_commons_commons_lang3",
     ],

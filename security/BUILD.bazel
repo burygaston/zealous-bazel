@@ -4,9 +4,8 @@
     test_class = "com.harness.security.SecurityTest_%d" % i,
     deps = [
         "@maven//:junit_junit",
-        "@maven//:org_mindrot_jbcrypt",
-        "@maven//:org_bitbucket_b_c_jose4j",
-        "@maven//:com_google_crypto_tink_tink",
-        "@maven//:org_bouncycastle_bcprov_jdk15on",
+        "@maven//:com_google_inject_guice",
+        "@maven//:io_netty_netty_all",
+        "@maven//:org_apache_httpcomponents_httpclient",
     ],
 ) for i in range(1, 11)]

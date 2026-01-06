@@ -4,9 +4,8 @@
     test_class = "com.harness.utils.UtilsTest_%d" % i,
     deps = [
         "@maven//:junit_junit",
-        "@maven//:commons_io_commons_io",
         "@maven//:org_slf4j_slf4j_api",
-        "@maven//:org_apache_logging_log4j_log4j_core",
-        "@maven//:org_apache_commons_commons_collections4",
+        "@maven//:ch_qos_logback_logback_classic",
+        "@maven//:joda_time_joda_time",
     ],
 ) for i in range(1, 11)]
