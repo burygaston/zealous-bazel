@@ -1,2 +1,6 @@
 # Enable the legacy WORKSPACE file for Bazel 8+
 common --enable_workspace
+
+# Ignore root user error for CI environments
+common --action_env=IGNORE_ROOT_USER_ERROR=1
+startup --host_jvm_args=-DIGNORE_ROOT_USER_ERROR=1
